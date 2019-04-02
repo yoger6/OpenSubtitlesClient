@@ -1,0 +1,24 @@
+﻿<methodCall>
+  <methodName>CheckMovieHash</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <array>
+          <data>
+            <value>
+              <string>first hash</string>
+            </value>
+            <value>
+              <string>second hash</string>
+            </value>
+          </data>
+        </array>
+      </value>
+    </param>
+  </params>
+</methodCall>

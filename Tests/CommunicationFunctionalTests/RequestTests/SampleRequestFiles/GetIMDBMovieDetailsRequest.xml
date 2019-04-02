@@ -1,0 +1,15 @@
+﻿<methodCall>
+  <methodName>GetIMDBMovieDetails</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>id</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSubtitlesClient", "OpenSubtitlesClient\OpenSubtitlesClient.csproj", "{855E6F42-6A4B-4F87-8063-05DADEBADF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationFunctionalTests", "Tests\CommunicationFunctionalTests\CommunicationFunctionalTests.csproj", "{2526509A-68D9-4D43-A905-161AC3F9C9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSubtitlesContract", "OpenSubtitlesContract\OpenSubtitlesContract.csproj", "{9497961C-931A-4A15-8726-14A0C55C1B70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationTests", "Tests\CommunicationTests\CommunicationTests.csproj", "{B64BCFF3-AE29-4A75-8A38-C22B23830405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{855E6F42-6A4B-4F87-8063-05DADEBADF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855E6F42-6A4B-4F87-8063-05DADEBADF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855E6F42-6A4B-4F87-8063-05DADEBADF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855E6F42-6A4B-4F87-8063-05DADEBADF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2526509A-68D9-4D43-A905-161AC3F9C9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2526509A-68D9-4D43-A905-161AC3F9C9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2526509A-68D9-4D43-A905-161AC3F9C9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2526509A-68D9-4D43-A905-161AC3F9C9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9497961C-931A-4A15-8726-14A0C55C1B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9497961C-931A-4A15-8726-14A0C55C1B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9497961C-931A-4A15-8726-14A0C55C1B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9497961C-931A-4A15-8726-14A0C55C1B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64BCFF3-AE29-4A75-8A38-C22B23830405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64BCFF3-AE29-4A75-8A38-C22B23830405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64BCFF3-AE29-4A75-8A38-C22B23830405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64BCFF3-AE29-4A75-8A38-C22B23830405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {601EB2EE-8480-48C3-A844-963AAEB42A4B}
+	EndGlobalSection
+EndGlobal

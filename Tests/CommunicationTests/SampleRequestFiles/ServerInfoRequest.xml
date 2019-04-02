@@ -1,0 +1,4 @@
+﻿<methodCall>
+  <methodName>ServerInfo</methodName>
+  <params />
+</methodCall>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{855E6F42-6A4B-4F87-8063-05DADEBADF8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSubtitlesClient</RootNamespace>
+    <AssemblyName>OpenSubtitlesClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\Responses\AddCommentResponse.cs" />
+    <Compile Include="Communication\Responses\AutoUpdateResponse.cs" />
+    <Compile Include="Communication\Responses\CheckSubHashResponse.cs" />
+    <Compile Include="Communication\Responses\Countries.cs" />
+    <Compile Include="Communication\Responses\Country.cs" />
+    <Compile Include="Communication\Responses\DetectLanguageResponse.cs" />
+    <Compile Include="Communication\Responses\Duration.cs" />
+    <Compile Include="Communication\Responses\Genre.cs" />
+    <Compile Include="Communication\Responses\Genres.cs" />
+    <Compile Include="Communication\Responses\GetAvailableTranslationsResponse.cs" />
+    <Compile Include="Communication\Responses\GetImdbMovieDetailsResponse.cs" />
+    <Compile Include="Communication\Responses\GetSubLanguagesResponse.cs" />
+    <Compile Include="Communication\Responses\GetTranslationResponse.cs" />
+    <Compile Include="Communication\Responses\IdentifiedLanguage.cs" />
+    <Compile Include="Communication\Responses\ImdbMovieDetails.cs" />
+    <Compile Include="Communication\Responses\ImdbPerson.cs" />
+    <Compile Include="Communication\Responses\InsertMovieResponse.cs" />
+    <Compile Include="Communication\Responses\Language.cs" />
+    <Compile Include="Communication\Responses\NoOperationResponse.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseArrayParameterValue.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseDoubleParameterValue.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseIntParameterValue.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseStructParameterValue.cs" />
+    <Compile Include="Communication\Responses\ReportWrongMovieHashResponse.cs" />
+    <Compile Include="Communication\Responses\SearchMoviesOnImdbResponse.cs" />
+    <Compile Include="Communication\Responses\SubtitleHash.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Communication\RequestFactory.cs" />
+    <Compile Include="Communication\Requests\ImdbQuery.cs" />
+    <Compile Include="Communication\Requests\LanguageCode.cs" />
+    <Compile Include="Communication\Requests\Movies\CheckMovieHashRequest.cs" />
+    <Compile Include="Communication\Requests\Movies\Data\Language.cs" />
+    <Compile Include="Communication\Requests\Movies\Data\Languages.cs" />
+    <Compile Include="Communication\Requests\Movies\GetImdbMovieDetailsRequest.cs" />
+    <Compile Include="Communication\Requests\Movies\InsertMovieRequest.cs" />
+    <Compile Include="Communication\Requests\Movies\SearchMoviesOnImdbRequest.cs" />
+    <Compile Include="Communication\Requests\Parameters\RequestParameter.cs" />
+    <Compile Include="Communication\Requests\Parameters\RequestParameterValue.cs" />
+    <Compile Include="Communication\Requests\Parameters\RequestParameterValueBase.cs" />
+    <Compile Include="Communication\Requests\RequestBase.cs" />
+    <Compile Include="Communication\Requests\RequestDeserializationException.cs" />
+    <Compile Include="Communication\Requests\Server\GetSubLanguagesRequest.cs" />
+    <Compile Include="Communication\Requests\Server\LoginRequest.cs" />
+    <Compile Include="Communication\Requests\Server\LogoutRequest.cs" />
+    <Compile Include="Communication\Requests\Server\NoOperationRequest.cs" />
+    <Compile Include="Communication\Requests\Server\ServerInformationRequest.cs" />
+    <Compile Include="Communication\Requests\Software\AutoUpdateRequest.cs" />
+    <Compile Include="Communication\Requests\Software\DetectLanguageRequest.cs" />
+    <Compile Include="Communication\Requests\Software\GetAvailableTranslationsRequest.cs" />
+    <Compile Include="Communication\Requests\Software\GetTranslationRequest.cs" />
+    <Compile Include="Communication\Requests\Software\TranslationFormat.cs" />
+    <Compile Include="Communication\Requests\Subtitles\AddCommentRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\CheckSubHashRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\GeneralSubtitleInformation.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\MovieHashData.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\MovieInformation.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\SubtitleFile.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\SubtitleIdentifier.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\SubtitleInformation.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\TryUploadSubtitlesRequestData.cs" />
+    <Compile Include="Communication\Requests\Subtitles\Data\UploadSubtitlesRequestData.cs" />
+    <Compile Include="Communication\Requests\Subtitles\DownloadSubtitlesRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\ReportWrongMovieHashRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\SearchSubtitlesRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\SubtitlesVoteRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\TryUploadSubtitlesRequest.cs" />
+    <Compile Include="Communication\Requests\Subtitles\UploadSubtitlesRequest.cs" />
+    <Compile Include="Communication\Responses\CheckMovieHashResponse.cs" />
+    <Compile Include="Communication\Responses\LoginResponse.cs" />
+    <Compile Include="Communication\Responses\LogoutResponse.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseMember.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseParameter.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseParameterValue.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseParameterValueBase.cs" />
+    <Compile Include="Communication\Responses\Parameters\ResponseStringParameterValue.cs" />
+    <Compile Include="Communication\Responses\ResponseBase.cs" />
+    <Compile Include="Communication\Responses\ResponseParameters.cs" />
+    <Compile Include="Communication\Responses\ResponseSerializationException.cs" />
+    <Compile Include="Communication\Responses\ResponseStatus.cs" />
+    <Compile Include="Communication\Responses\ResponseTime.cs" />
+    <Compile Include="Communication\Serialization\Parameters\Method.cs" />
+    <Compile Include="Communication\Serialization\RequestXmlSerializer.cs" />
+    <Compile Include="Communication\Serialization\ResponseXmlDeserializer.cs" />
+    <Compile Include="Communication\Serialization\Structure\RequestMember.cs" />
+    <Compile Include="Communication\Serialization\Structure\Value.cs" />
+    <Compile Include="Communication\Validation\Assure.cs" />
+    <Compile Include="Communication\Validation\ValidationException.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="Validation\Ensure.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

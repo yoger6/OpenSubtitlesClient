@@ -1,0 +1,10 @@
+﻿<methodCall>
+  <methodName>LogOut</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

@@ -1,0 +1,35 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <struct>
+                <member>
+                  <name>MD5 of requested string</name>
+                  <value>
+                    <string>eng</string>
+                  </value>
+                </member>
+              </struct>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.425</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

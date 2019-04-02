@@ -1,0 +1,15 @@
+﻿<methodCall>
+  <methodName>ReportWrongMovieHash</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>39620</int>
+      </value>
+    </param>
+  </params>
+</methodCall>

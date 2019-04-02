@@ -1,0 +1,24 @@
+﻿<methodCall>
+  <methodName>DownloadSubtitles</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <array>
+          <data>
+            <value>
+              <int>123</int>
+            </value>
+            <value>
+              <int>456</int>
+            </value>
+          </data>
+        </array>
+      </value>
+    </param>
+  </params>
+</methodCall>

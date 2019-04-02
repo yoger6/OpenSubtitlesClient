@@ -1,0 +1,24 @@
+﻿<methodCall>
+  <methodName>DetectLanguage</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <array>
+          <data>
+            <value>
+              <string>gzipped and then base64-encoded string</string>
+            </value>
+            <value>
+              <string>second gzipped and then base64-encoded string</string>
+            </value>
+          </data>
+        </array>
+      </value>
+    </param>
+  </params>
+</methodCall>

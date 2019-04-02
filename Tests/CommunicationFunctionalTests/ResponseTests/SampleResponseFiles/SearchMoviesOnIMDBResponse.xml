@@ -1,0 +1,63 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <array>
+                <data>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>id</name>
+                        <value>
+                          <string>0088763</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>title</name>
+                        <value>
+                          <string>Back to the Future (1985)</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>id</name>
+                        <value>
+                          <string>0096874</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>title</name>
+                        <value>
+                          <string>Back to the Future Part II (1989)</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </data>
+              </array>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.622</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

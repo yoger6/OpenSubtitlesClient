@@ -1,0 +1,15 @@
+﻿<methodCall>
+  <methodName>SearchMoviesOnIMDB</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>back to the future</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

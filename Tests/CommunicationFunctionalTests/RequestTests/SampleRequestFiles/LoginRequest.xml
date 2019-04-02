@@ -1,0 +1,25 @@
+﻿<methodCall>
+  <methodName>LogIn</methodName>
+  <params>
+    <param>
+      <value>
+        <string>user</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>password</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>en</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>agent</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

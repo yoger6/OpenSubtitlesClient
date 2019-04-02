@@ -1,0 +1,15 @@
+﻿<methodCall>
+  <methodName>GetAvailableTranslations</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>movie organizer</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

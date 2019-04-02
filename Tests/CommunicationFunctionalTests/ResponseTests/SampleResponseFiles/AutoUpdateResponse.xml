@@ -1,0 +1,40 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>version</name>
+            <value>
+              <string>latest application version</string>
+            </value>
+          </member>
+          <member>
+            <name>url_windows</name>
+            <value>
+              <string>http://www.opensubtitles.org/addons/download/app/movieorganizer.zip</string>
+            </value>
+          </member>
+          <member>
+            <name>comments</name>
+            <value>
+              <string>changes and stuff</string>
+            </value>
+          </member>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.004</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

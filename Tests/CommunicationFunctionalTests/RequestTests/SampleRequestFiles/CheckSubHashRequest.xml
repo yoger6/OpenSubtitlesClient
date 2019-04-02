@@ -1,0 +1,24 @@
+﻿<methodCall>
+  <methodName>CheckSubHash</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <array>
+          <data>
+            <value>
+              <string>first subtitle hash</string>
+            </value>
+            <value>
+              <string>second subtitle hash</string>
+            </value>
+          </data>
+        </array>
+      </value>
+    </param>
+  </params>
+</methodCall>

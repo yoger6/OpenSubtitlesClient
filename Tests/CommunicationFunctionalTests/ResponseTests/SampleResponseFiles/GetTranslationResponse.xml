@@ -1,0 +1,28 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <string>gzipped and base64-encoded language file contents</string>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>3.824</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

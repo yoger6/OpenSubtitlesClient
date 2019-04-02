@@ -1,0 +1,10 @@
+﻿<methodCall>
+  <methodName>NoOperation</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

@@ -1,0 +1,47 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <array>
+                <data>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>idsubtitlefile</name>
+                        <value>
+                          <int>1951894257</int>
+                        </value>
+                      </member>
+                      <member>
+                        <name>data</name>
+                        <value>
+                          <string>base64-encoded and gzipped subtitle file contents</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </data>
+              </array>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.38</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

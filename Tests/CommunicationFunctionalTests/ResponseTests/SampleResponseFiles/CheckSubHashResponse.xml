@@ -1,0 +1,41 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <struct>
+                <member>
+                  <name>sub hash 1</name>
+                  <value>
+                    <string>sub 1 id</string>
+                  </value>
+                </member>
+                <member>
+                  <name>sub hash 2</name>
+                  <value>
+                    <string>sub 2 id</string>
+                  </value>
+                </member>
+              </struct>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>0.207</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

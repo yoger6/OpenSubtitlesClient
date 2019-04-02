@@ -1,0 +1,10 @@
+﻿<methodCall>
+  <methodName>AutoUpdate</methodName>
+  <params>
+    <param>
+      <value>
+        <string>MovieOrganizer</string>
+      </value>
+    </param>
+  </params>
+</methodCall>

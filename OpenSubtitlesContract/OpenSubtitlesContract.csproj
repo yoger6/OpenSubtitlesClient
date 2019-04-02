@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9497961C-931A-4A15-8726-14A0C55C1B70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSubtitlesContract</RootNamespace>
+    <AssemblyName>OpenSubtitlesContract</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\AddCommentRawRequest.cs" />
+    <Compile Include="Requests\AutoUpdateRawRequest.cs" />
+    <Compile Include="Requests\CheckMovieHashRawRequest.cs" />
+    <Compile Include="Requests\CheckSubHashRawRequest.cs" />
+    <Compile Include="Requests\DetectLanguageRawRequest.cs" />
+    <Compile Include="Requests\DownloadSubtitlesRawRequest.cs" />
+    <Compile Include="Requests\GetAvailableTranslationsRawRequest.cs" />
+    <Compile Include="Requests\GetIMDBMovieDetailsRawRequest.cs" />
+    <Compile Include="Requests\GetSubLanguagesRawRequest.cs" />
+    <Compile Include="Requests\GetTranslationRawRequest.cs" />
+    <Compile Include="Requests\InsertMovieRawRequest.cs" />
+    <Compile Include="Requests\LoginRawRequest.cs" />
+    <Compile Include="Requests\LogoutRawRequest.cs" />
+    <Compile Include="Requests\NoOperationRawRequest.cs" />
+    <Compile Include="Requests\ReportWrongMovieHashRawRequest.cs" />
+    <Compile Include="Requests\SearchMoviesOnIMDBRawRequest.cs" />
+    <Compile Include="Requests\SearchSubtitlesRawRequest.cs" />
+    <Compile Include="Requests\ServerInfoRawRequest.cs" />
+    <Compile Include="Requests\SubtitlesVoteRawRequest.cs" />
+    <Compile Include="Requests\TryUploadSubtitlesRawRequest.cs" />
+    <Compile Include="Requests\UploadSubtitlesRawRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Responses\Schema\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Requests\Schema\AddCommentRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\AutoUpdateRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\CheckMovieHashRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\CheckSubHashRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\DetectLanguageRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\DownloadSubtitlesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\GetAvailableTranslationsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\GetIMDBMovieDetailsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\GetSubLanguagesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\GetTranslationRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\InsertMovieRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\LoginRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\LogoutRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\NoOperationRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\ReportWrongMovieHashRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\SearchMoviesOnIMDBRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\SearchSubtitlesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\ServerInfoRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\SubtitlesVoteRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\TryUploadSubtitlesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Requests\Schema\UploadSubtitlesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+﻿<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>status</name>
+            <value>
+              <string>200 OK</string>
+            </value>
+          </member>
+          <member>
+            <name>data</name>
+            <value>
+              <string>http://www.opensubtitles.org/en/subtitles/3337919/almost-heroes-cs/sid-d5pnounn3ea5aja0nn4inqamf2</string>
+            </value>
+          </member>
+          <member>
+            <name>subtitles</name>
+            <value>
+              <boolean>0</boolean>
+            </value>
+          </member>
+          <member>
+            <name>seconds</name>
+            <value>
+              <double>1.705</double>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>

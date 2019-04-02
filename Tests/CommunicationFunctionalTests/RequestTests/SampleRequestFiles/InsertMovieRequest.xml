@@ -1,0 +1,28 @@
+﻿<methodCall>
+  <methodName>InsertMovie</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>moviename</name>
+            <value>
+              <string>Terminator</string>
+            </value>
+          </member>
+          <member>
+            <name>movieyear</name>
+            <value>
+              <string>2008</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodCall>

@@ -1,0 +1,28 @@
+﻿<methodCall>
+  <methodName>SubtitlesVote</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>idsubtitle</name>
+            <value>
+              <int>3337934</int>
+            </value>
+          </member>
+          <member>
+            <name>score</name>
+            <value>
+              <int>10</int>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodCall>

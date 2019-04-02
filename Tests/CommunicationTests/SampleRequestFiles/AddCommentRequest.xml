@@ -1,0 +1,34 @@
+﻿<methodCall>
+  <methodName>AddComment</methodName>
+  <params>
+    <param>
+      <value>
+        <string>token</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>idsubtitle</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>comment</name>
+            <value>
+              <string>actual comment</string>
+            </value>
+          </member>
+          <member>
+            <name>badsubtitle</name>
+            <value>
+              <int>0</int>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodCall>
