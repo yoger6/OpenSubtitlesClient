@@ -38,9 +38,13 @@ namespace CommunicationFunctionalTests.RequestTests
 
         public static RequestBase DetectLanguageRequest()
         {
-            return new DetectLanguageRequest(
+            return null;
+            /*
+             *new DetectLanguageRequest(
                 Token, "gzipped and then base64-encoded string",
                 "second gzipped and then base64-encoded string");
+             *
+             */
         }
 
         public static RequestBase DownloadSubtitlesRequest()

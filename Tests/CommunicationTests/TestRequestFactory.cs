@@ -19,7 +19,7 @@ namespace CommunicationTests
                 methodName = "CheckMovieHash",
                 @params = new []
                 {
-                    new Param { new  }
+                    new Param ()
                 }
             };
         }
