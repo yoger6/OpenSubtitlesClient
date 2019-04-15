@@ -166,7 +166,7 @@ public class AddCommentRawRequest
 
         private string stringField;
 
-        private byte intField;
+        private int intField;
 
         private bool intFieldSpecified;
 
@@ -184,7 +184,7 @@ public class AddCommentRawRequest
         }
 
         /// <remarks/>
-        public byte @int
+        public int @int
         {
             get
             {

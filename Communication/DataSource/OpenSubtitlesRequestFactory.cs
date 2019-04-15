@@ -7,12 +7,13 @@ namespace Communication.DataSource
 {
     public class OpenSubtitlesRequestFactory : IRequestFactory
     {
-        public UploadSubtitlesRawRequest CreateUploadSubtitlesRequest(string imdbId,
+        public UploadSubtitlesRawRequest CreateUploadSubtitlesRequest(
+            string imdbId,
             LanguageCode language,
             string movieFileName,
             string movieKnownAs,
             string comment,
-            IList<SubtitleFile> files, 
+            IList<SubtitleFile> files,
             string token)
         {
             var builder = new UploadSubtitlesRequestBuilder();
@@ -24,7 +25,9 @@ namespace Communication.DataSource
             return builder.Build();
         }
 
-        public TryUploadSubtitlesRawRequest CreateTryUploadSubtitlesRequest(IList<SubtitleFile> subtitles, string token)
+        public TryUploadSubtitlesRawRequest CreateTryUploadSubtitlesRequest(
+            IList<SubtitleFile> subtitles,
+            string token)
         {
             var builder = new TryUploadSubtitlesRequestBuilder();
 
@@ -34,7 +37,10 @@ namespace Communication.DataSource
             return builder.Build();
         }
 
-        public SubtitlesVoteRawRequest CreateSubtitlesVoteRequest(uint subtitleId, uint score, string token)
+        public SubtitlesVoteRawRequest CreateSubtitlesVoteRequest(
+            uint subtitleId,
+            uint score,
+            string token)
         {
             var builder = new SubtitlesVoteRequestBuilder();
 
@@ -49,11 +55,13 @@ namespace Communication.DataSource
             return new ServerInfoRawRequest
             {
                 methodName = "ServerInfo",
-                @params =  new object()
+                @params = new object()
             };
         }
 
-        public SearchSubtitlesRawRequest CreateSearchSubtitlesRequest(string token, IEnumerable<MovieHashData> movies)
+        public SearchSubtitlesRawRequest CreateSearchSubtitlesRequest(
+            string token,
+            IEnumerable<MovieHashData> movies)
         {
             var builder = new SearchSubtitlesRequestBuilder();
 
@@ -63,7 +71,9 @@ namespace Communication.DataSource
             return builder.Build();
         }
 
-        public SearchMoviesOnIMDBRawRequest CreateSearchMoviesOnImdbRequest(string name, string token)
+        public SearchMoviesOnIMDBRawRequest CreateSearchMoviesOnImdbRequest(
+            string name,
+            string token)
         {
             return new SearchMoviesOnIMDBRawRequest
             {
@@ -88,7 +98,9 @@ namespace Communication.DataSource
             };
         }
 
-        public ReportWrongMovieHashRawRequest CreateReportWrongMovieHashRequest(uint subtitleId, string token)
+        public ReportWrongMovieHashRawRequest CreateReportWrongMovieHashRequest(
+            uint subtitleId,
+            string token)
         {
             return new ReportWrongMovieHashRawRequest
             {
@@ -150,12 +162,16 @@ namespace Communication.DataSource
             };
         }
 
-        public LoginRawRequest CreateLoginRequest(string user, string password, LanguageCode language, string agent)
+        public LoginRawRequest CreateLoginRequest(
+            string user,
+            string password,
+            LanguageCode language,
+            string agent)
         {
             return new LoginRawRequest
             {
                 methodName = "LogIn",
-                @params = new []
+                @params = new[]
                 {
                     new LoginRawRequest.Param
                     {
@@ -194,7 +210,7 @@ namespace Communication.DataSource
             return new InsertMovieRawRequest
             {
                 methodName = "InsertMovie",
-                @params = new []
+                @params = new[]
                 {
                     new InsertMovieRawRequest.Param
                     {
@@ -207,7 +223,7 @@ namespace Communication.DataSource
                     {
                         value = new InsertMovieRawRequest.ParamValue
                         {
-                            @struct = new []
+                            @struct = new[]
                             {
                                 new InsertMovieRawRequest.ParamValueMember
                                 {
@@ -232,7 +248,10 @@ namespace Communication.DataSource
             };
         }
 
-        public GetTranslationRawRequest CreateGetTranslationRequest(LanguageCode language, TranslationFormat format, string applicationName, string token)
+        public GetTranslationRawRequest CreateGetTranslationRequest(LanguageCode language,
+            TranslationFormat format,
+            string applicationName,
+            string token)
         {
             return new GetTranslationRawRequest
             {
@@ -289,7 +308,9 @@ namespace Communication.DataSource
             };
         }
 
-        public GetIMDBMovieDetailsRawRequest CreateGetImdbMovieDetailsRequest(string imdbMovieId, string token)
+        public GetIMDBMovieDetailsRawRequest CreateGetImdbMovieDetailsRequest(
+            string imdbMovieId,
+            string token)
         {
             return new GetIMDBMovieDetailsRawRequest
             {
@@ -314,12 +335,14 @@ namespace Communication.DataSource
             };
         }
 
-        public GetAvailableTranslationsRawRequest CreateGetAvailableTranslationsRequest(string applicationName, string token)
+        public GetAvailableTranslationsRawRequest CreateGetAvailableTranslationsRequest(
+            string applicationName,
+            string token)
         {
             return new GetAvailableTranslationsRawRequest
             {
                 methodName = "GetAvailableTranslations",
-                @params = new []
+                @params = new[]
                 {
                     new GetAvailableTranslationsRawRequest.Param
                     {
@@ -339,32 +362,40 @@ namespace Communication.DataSource
             };
         }
 
-        public DownloadSubtitlesRawRequest CreateDownloadSubtitlesRequest(uint[] subtitleIds, string token)
+        public DownloadSubtitlesRawRequest CreateDownloadSubtitlesRequest(
+            uint[] subtitleIds,
+            string token)
         {
-            var request = new DownloadSubtitlesRawRequest();
-
-            request.methodName = "DownloadSubtitles";
-
-            request.@params = new[]
+            var request = new DownloadSubtitlesRawRequest
             {
-                new DownloadSubtitlesRawRequest.Param
+                methodName = "DownloadSubtitles",
+                @params = new[]
                 {
-                    value = new DownloadSubtitlesRawRequest.ParamValue
+                    new DownloadSubtitlesRawRequest.Param
                     {
-                        @string = token
-                    }
-                },
-                new DownloadSubtitlesRawRequest.Param
-                {
-                    value = new DownloadSubtitlesRawRequest.ParamValue
-                    {
-                        array = new DownloadSubtitlesRawRequest.ParamValueArray
+                        value = new DownloadSubtitlesRawRequest.ParamValue
                         {
-                            data = subtitleIds.Select(x=> new DownloadSubtitlesRawRequest.ParamValueArrayValue {@int = x}).ToArray()
+                            @string = token
+                        }
+                    },
+                    new DownloadSubtitlesRawRequest.Param
+                    {
+                        value = new DownloadSubtitlesRawRequest.ParamValue
+                        {
+                            array = new DownloadSubtitlesRawRequest.ParamValueArray
+                            {
+                                data =
+                                    subtitleIds.Select(
+                                        x =>
+                                            new DownloadSubtitlesRawRequest.
+                                                ParamValueArrayValue { @int = x }).ToArray()
+                            }
                         }
                     }
                 }
             };
+
+
 
             return request;
         }
@@ -389,7 +420,156 @@ namespace Communication.DataSource
                         {
                             array = new DetectLanguageRawRequest.ParamValueArray
                             {
-                                data = texts.Select(x => new DetectLanguageRawRequest.ParamValueArrayValue { @string = x }).ToArray()
+                                data =
+                                    texts.Select(
+                                        x =>
+                                            new DetectLanguageRawRequest.ParamValueArrayValue
+                                            {
+                                                @string = x
+                                            }).ToArray()
+                            }
+                        }
+                    }
+                }
+            };
+        }
+
+        public CheckSubHashRawRequest CreateCheckSubHashRequest(string[] hashes, string token)
+        {
+            return new CheckSubHashRawRequest
+            {
+                methodName = "CheckSubHash",
+                @params = new[]
+                {
+                    new CheckSubHashRawRequest.Param
+                    {
+                        value = new CheckSubHashRawRequest.ParamValue
+                        {
+                            @string = token
+                        }
+                    },
+                    new CheckSubHashRawRequest.Param
+                    {
+                        value = new CheckSubHashRawRequest.ParamValue
+                        {
+                            array = new CheckSubHashRawRequest.ParamValueArray
+                            {
+                                data =
+                                    hashes.Select(
+                                        x =>
+                                            new CheckSubHashRawRequest.ParamValueArrayValue
+                                            {
+                                                @string = x
+                                            }).ToArray()
+                            }
+                        }
+                    }
+                }
+            };
+        }
+
+        public CheckMovieHashRawRequest GetCheckMovieHashRequest(string[] hashes, string token)
+        {
+            return new CheckMovieHashRawRequest
+            {
+                methodName = "CheckMovieHash",
+                @params = new[]
+                {
+                    new CheckMovieHashRawRequest.Param
+                    {
+                        value = new CheckMovieHashRawRequest.ParamValue
+                        {
+                            @string = token
+                        }
+                    },
+                    new CheckMovieHashRawRequest.Param
+                    {
+                        value = new CheckMovieHashRawRequest.ParamValue
+                        {
+                            array = new CheckMovieHashRawRequest.ParamValueArray
+                            {
+                                data = hashes
+                                    .Select(
+                                        x =>
+                                            new CheckMovieHashRawRequest.ParamValueArrayValue
+                                            {
+                                                @string = x
+                                            })
+                                    .ToArray()
+                            }
+                        }
+                    }
+                }
+            };
+        }
+
+        public AutoUpdateRawRequest GetAutoUpdateRequest(string applicationName)
+        {
+            return new AutoUpdateRawRequest
+            {
+                methodName = "AutoUpdate",
+                @params = new AutoUpdateRawRequest.Params
+                {
+                    param = new AutoUpdateRawRequest.ParamsParam
+                    {
+                        value = new AutoUpdateRawRequest.ParamsParamValue
+                        {
+                            @string = applicationName
+                        }
+                    }
+                }
+            };
+        }
+
+        public AddCommentRawRequest GetAddCommentRequest(int subtitleId,
+            string comment,
+            bool isBadSubtitle,
+            string token)
+        {
+            return new AddCommentRawRequest
+            {
+                methodName = "AddComment",
+                @params = new[]
+                {
+                    new AddCommentRawRequest.Param
+                    {
+                        value = new AddCommentRawRequest.ParamValue
+                        {
+                            @string = token
+                        }
+                    },
+                    new AddCommentRawRequest.Param
+                    {
+                        value = new AddCommentRawRequest.ParamValue
+                        {
+                            @struct = new[]
+                            {
+                                new AddCommentRawRequest.ParamValueMember
+                                {
+                                    name = "idsubtitle",
+                                    value = new AddCommentRawRequest.ParamValueMemberValue
+                                    {
+                                        @int = subtitleId,
+                                        intSpecified = true
+                                    }
+                                },
+                                new AddCommentRawRequest.ParamValueMember
+                                {
+                                    name = "comment",
+                                    value = new AddCommentRawRequest.ParamValueMemberValue
+                                    {
+                                        @string = comment
+                                    }
+                                },
+                                new AddCommentRawRequest.ParamValueMember
+                                {
+                                    name = "badsubtitle",
+                                    value = new AddCommentRawRequest.ParamValueMemberValue
+                                    {
+                                        intSpecified = true,
+                                        @int = isBadSubtitle ? 1 : 0
+                                    }
+                                }
                             }
                         }
                     }

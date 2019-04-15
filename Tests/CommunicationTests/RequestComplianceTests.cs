@@ -15,7 +15,6 @@ namespace CommunicationTests
             VerifyRequestCompliance(data);
         }
 
-
         private static void VerifyRequestCompliance(params TestData[] testData)
         {
             foreach (var requestData in testData)

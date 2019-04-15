@@ -47,101 +47,117 @@ public class CheckMovieHashRawRequest{
             paramsField = value;
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
-[System.Serializable()]
-[System.Diagnostics.DebuggerStepThrough()]
-[System.ComponentModel.DesignerCategory("code")]
-[System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
-public class Param {
-    
-    private ParamValue valueField;
-    
     /// <remarks/>
-    public ParamValue value {
-        get {
-            return valueField;
-        }
-        set {
-            valueField = value;
-        }
-    }
-}
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    public class Param
+    {
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
-[System.Serializable()]
-[System.Diagnostics.DebuggerStepThrough()]
-[System.ComponentModel.DesignerCategory("code")]
-[System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
-public class ParamValue {
-    
-    private ParamValueArray arrayField;
-    
-    private string stringField;
-    
-    /// <remarks/>
-    public ParamValueArray array {
-        get {
-            return arrayField;
-        }
-        set {
-            arrayField = value;
-        }
-    }
-    
-    /// <remarks/>
-    public string @string {
-        get {
-            return stringField;
-        }
-        set {
-            stringField = value;
-        }
-    }
-}
+        private ParamValue valueField;
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
-[System.Serializable()]
-[System.Diagnostics.DebuggerStepThrough()]
-[System.ComponentModel.DesignerCategory("code")]
-[System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
-public class ParamValueArray {
-    
-    private ParamValueArrayValue[] dataField;
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItem("value", IsNullable=false)]
-    public ParamValueArrayValue[] data {
-        get {
-            return dataField;
-        }
-        set {
-            dataField = value;
+        /// <remarks/>
+        public ParamValue value
+        {
+            get
+            {
+                return valueField;
+            }
+            set
+            {
+                valueField = value;
+            }
         }
     }
-}
 
-/// <remarks/>
-[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
-[System.Serializable()]
-[System.Diagnostics.DebuggerStepThrough()]
-[System.ComponentModel.DesignerCategory("code")]
-[System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
-public class ParamValueArrayValue {
-    
-    private string stringField;
-    
     /// <remarks/>
-    public string @string {
-        get {
-            return stringField;
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    public class ParamValue
+    {
+
+        private ParamValueArray arrayField;
+
+        private string stringField;
+
+        /// <remarks/>
+        public ParamValueArray array
+        {
+            get
+            {
+                return arrayField;
+            }
+            set
+            {
+                arrayField = value;
+            }
         }
-        set {
-            stringField = value;
+
+        /// <remarks/>
+        public string @string
+        {
+            get
+            {
+                return stringField;
+            }
+            set
+            {
+                stringField = value;
+            }
         }
     }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    public class ParamValueArray
+    {
+
+        private ParamValueArrayValue[] dataField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItem("value", IsNullable = false)]
+        public ParamValueArrayValue[] data
+        {
+            get
+            {
+                return dataField;
+            }
+            set
+            {
+                dataField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    public class ParamValueArrayValue
+    {
+
+        private string stringField;
+
+        /// <remarks/>
+        public string @string
+        {
+            get
+            {
+                return stringField;
+            }
+            set
+            {
+                stringField = value;
+            }
+        }
+    }
+
 }

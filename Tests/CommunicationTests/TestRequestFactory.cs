@@ -13,6 +13,10 @@ namespace CommunicationTests
         {
             return new[]
             {
+                new TestData(typeof(AddCommentRawRequest), GetAddCommentRequest()), 
+                new TestData(typeof(AutoUpdateRawRequest), GetAutoUpdateRequest()), 
+                new TestData(typeof(CheckMovieHashRawRequest), GetCheckMovieHashRequest()), 
+                new TestData(typeof(CheckSubHashRawRequest), GetCheckSubHashRawRequest()),
                 new TestData(typeof(DetectLanguageRawRequest), GetDetectLanguageRequest()), 
                 new TestData(typeof(DownloadSubtitlesRawRequest), GetDownloadSubtitlesRequest()), 
                 new TestData(typeof(GetAvailableTranslationsRawRequest), GetGetAvailableTranslationsRequest()), 
@@ -31,6 +35,26 @@ namespace CommunicationTests
                 new TestData(typeof(UploadSubtitlesRawRequest), GetUploadSubtitlesRequest()),
                 new TestData(typeof(TryUploadSubtitlesRawRequest), GetTryUploadSubtitlesRawRequest()),
             };
+        }
+
+        private static AddCommentRawRequest GetAddCommentRequest()
+        {
+            return Factory.GetAddCommentRequest(1, "actual comment", false, "token");
+        }
+
+        private static AutoUpdateRawRequest GetAutoUpdateRequest()
+        {
+            return Factory.GetAutoUpdateRequest("MovieOrganizer");
+        }
+
+        private static CheckMovieHashRawRequest GetCheckMovieHashRequest()
+        {
+            return Factory.GetCheckMovieHashRequest(new [] {"first hash", "second hash"}, "token");
+        }
+
+        private static CheckSubHashRawRequest GetCheckSubHashRawRequest()
+        {
+            return Factory.CreateCheckSubHashRequest(new []{ "first subtitle hash", "second subtitle hash" }, "token");
         }
 
         private static DetectLanguageRawRequest GetDetectLanguageRequest()
