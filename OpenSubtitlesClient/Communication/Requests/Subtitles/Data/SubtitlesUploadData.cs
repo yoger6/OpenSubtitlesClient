@@ -1,11 +1,14 @@
-﻿namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
+﻿using Communication;
+using Communication.Subtitles;
+
+namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
 {
-    public class UploadSubtitlesRequestData
+    public class SubtitlesUploadData
     {
         public GeneralSubtitleInformation General { get; }
         public SubtitleFile[] SubtitleFiles { get; }
 
-        public UploadSubtitlesRequestData(
+        public SubtitlesUploadData(
             GeneralSubtitleInformation general, 
             params SubtitleFile[] subtitleFiles)
         {

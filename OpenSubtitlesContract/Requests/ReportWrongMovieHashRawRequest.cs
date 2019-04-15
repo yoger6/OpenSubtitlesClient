@@ -53,7 +53,6 @@ public class ReportWrongMovieHashRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class Param
     {
 
@@ -78,18 +77,17 @@ public class ReportWrongMovieHashRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValue
     {
 
-        private ushort intField;
+        private uint intField;
 
         private bool intFieldSpecified;
 
         private string stringField;
 
         /// <remarks/>
-        public ushort @int
+        public uint @int
         {
             get
             {

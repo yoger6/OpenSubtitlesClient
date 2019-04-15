@@ -1,11 +1,12 @@
 ﻿// ReSharper disable InconsistentNaming
-namespace OpenSubtitlesClient.Communication.Requests
+namespace Communication.Common
 {
     /// <summary>
     /// Standardized to ISO639-1
     /// </summary>
     public enum LanguageCode
     {
+        unk, //Unknown - not a part of the standard, however it enables auto-detection by opensubtitles
         aa, //Afar
         ab, //Abkhazian
         af, //Afrikaans

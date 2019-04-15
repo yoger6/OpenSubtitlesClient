@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
+using Communication;
+using Communication.Common;
 using OpenSubtitlesClient.Communication.Requests;
 using OpenSubtitlesClient.Communication.Responses.Parameters;
 

@@ -16,7 +16,7 @@
                           <xs:element minOccurs="0" name="struct">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="member">
+                                <xs:element maxOccurs="unbounded" name="member">
                                   <xs:complexType>
                                     <xs:sequence>
                                       <xs:element name="name" type="xs:string" />

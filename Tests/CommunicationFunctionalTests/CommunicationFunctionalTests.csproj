@@ -110,6 +110,10 @@
     <Compile Include="SessionTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Communication\Communication.csproj">
+      <Project>{2D6EAE1D-4AEC-40A4-BE49-C61CCEEC44CE}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\OpenSubtitlesClient\OpenSubtitlesClient.csproj">
       <Project>{855e6f42-6a4b-4f87-8063-05dadebadf8b}</Project>
       <Name>OpenSubtitlesClient</Name>
@@ -216,6 +220,7 @@
     </Content>
     <Content Include="ResponseTests\SampleResponseFiles\UploadSubtitlesResponse.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="ResponseTests\SampleResponseFiles\ServerInfoResponse.xml">
       <SubType>Designer</SubType>

@@ -53,7 +53,7 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class Param
     {
 
@@ -78,7 +78,7 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class ParamValue
     {
 
@@ -118,7 +118,7 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class ParamValueArray
     {
 
@@ -144,7 +144,7 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class ParamValueArrayValue
     {
 
@@ -170,7 +170,7 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class ParamValueArrayValueMember
     {
 
@@ -210,18 +210,18 @@ public class SearchSubtitlesRawRequest{
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
+    
     public class ParamValueArrayValueMemberValue
     {
 
-        private byte doubleField;
+        private long doubleField;
 
         private bool doubleFieldSpecified;
 
         private string stringField;
 
         /// <remarks/>
-        public byte @double
+        public long @double
         {
             get
             {
@@ -234,7 +234,7 @@ public class SearchSubtitlesRawRequest{
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [System.Xml.Serialization.XmlIgnore()]
         public bool doubleSpecified
         {
             get

@@ -1,10 +1,12 @@
 ﻿using System;
+using Communication;
+using Communication.Common;
+using Communication.Subtitles;
 using CommunicationFunctionalTests.ContractMembers;
 using OpenSubtitlesClient;
 using OpenSubtitlesClient.Communication;
 using OpenSubtitlesClient.Communication.Requests;
 using OpenSubtitlesClient.Communication.Requests.Movies;
-using OpenSubtitlesClient.Communication.Requests.Movies.Data;
 using OpenSubtitlesClient.Communication.Requests.Server;
 using OpenSubtitlesClient.Communication.Requests.Software;
 using OpenSubtitlesClient.Communication.Requests.Subtitles;
@@ -40,7 +42,7 @@ namespace CommunicationFunctionalTests.RequestTests
         {
             return null;
             /*
-             *new DetectLanguageRequest(
+             *new DetectLanguageRawRequest(
                 Token, "gzipped and then base64-encoded string",
                 "second gzipped and then base64-encoded string");
              *
@@ -72,8 +74,9 @@ namespace CommunicationFunctionalTests.RequestTests
 
         public static RequestBase GetTranslationRequest()
         {
-            return new GetTranslationRequest(
-                Token, "Movie Organizer", TranslationFormat.Mo, LanguageCode.en);
+            return null;
+            //return new GetTranslationRequest(
+            //    Token, "Movie Organizer", TranslationFormat.Mo, LanguageCode.en);
         }
 
         public static RequestBase InsertMovieRequest()
@@ -109,10 +112,11 @@ namespace CommunicationFunctionalTests.RequestTests
         public static RequestBase SearchSubtitlesRequest()
         {
             var languages = new LanguageList(Languages.English, Languages.German);
-            var firstMovieInfo = new MovieHashData(languages, "first hash", 1);
-            var secondMovieInfo = new MovieHashData(languages, "second hash", 1);
+            //var firstMovieInfo = new MovieHashData(languages, "first hash", 1);
+            //var secondMovieInfo = new MovieHashData(languages, "second hash", 1);
 
-            return new SearchSubtitlesRequest(Token, firstMovieInfo, secondMovieInfo);
+            //return new SearchSubtitlesRequest(Token, firstMovieInfo, secondMovieInfo);
+            return null;
         }
 
         public static RequestBase SearchToMailRequest()
@@ -148,7 +152,7 @@ namespace CommunicationFunctionalTests.RequestTests
         {
             return new UploadSubtitlesRequest(
                 Token,
-                new UploadSubtitlesRequestData(
+                new SubtitlesUploadData(
                     new GeneralSubtitleInformation(
                         "0119053", LanguageCode.cs, "Almost.Heroes.1998.DVDRip.XviD-FRAGMENT",
                         "the movie", "sumthing"),

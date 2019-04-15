@@ -21,7 +21,7 @@
 [System.ComponentModel.DesignerCategory("code")]
 [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
 [System.Xml.Serialization.XmlRoot(Namespace="", IsNullable=false)]
-public class DetectLanguageRequest
+public class DetectLanguageRawRequest
 {
     
     private string methodNameField;
@@ -54,7 +54,6 @@ public class DetectLanguageRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class Param
     {
 
@@ -79,7 +78,6 @@ public class DetectLanguageRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValue
     {
 
@@ -119,7 +117,6 @@ public class DetectLanguageRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValueArray
     {
 
@@ -145,7 +142,6 @@ public class DetectLanguageRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValueArrayValue
     {
 

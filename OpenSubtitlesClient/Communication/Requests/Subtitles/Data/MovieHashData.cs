@@ -1,4 +1,4 @@
-﻿using OpenSubtitlesClient.Communication.Requests.Movies.Data;
+﻿using Communication.Common;
 
 namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
 {

@@ -1,5 +1,5 @@
 using System.Net;
-using OpenSubtitlesClient.Communication.Requests.Movies.Data;
+using Communication.Common;
 using OpenSubtitlesClient.Communication.Responses;
 using Xunit;
 

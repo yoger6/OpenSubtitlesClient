@@ -54,7 +54,6 @@ public class DownloadSubtitlesRawRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class Param
     {
 
@@ -79,7 +78,6 @@ public class DownloadSubtitlesRawRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValue
     {
 
@@ -119,7 +117,6 @@ public class DownloadSubtitlesRawRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValueArray
     {
 
@@ -145,14 +142,13 @@ public class DownloadSubtitlesRawRequest
     [System.Serializable()]
     [System.Diagnostics.DebuggerStepThrough()]
     [System.ComponentModel.DesignerCategory("code")]
-    [System.Xml.Serialization.XmlType(TypeName = "methodCall", Namespace = "", AnonymousType = false)]
     public class ParamValueArrayValue
     {
 
-        private ushort intField;
+        private uint intField;
 
         /// <remarks/>
-        public ushort @int
+        public uint @int
         {
             get
             {

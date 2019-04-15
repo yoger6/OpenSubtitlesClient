@@ -1,4 +1,6 @@
 using System.Linq;
+using Communication;
+using Communication.Common;
 using OpenSubtitlesClient.Communication.Requests;
 using OpenSubtitlesClient.Communication.Responses;
 using Xunit;

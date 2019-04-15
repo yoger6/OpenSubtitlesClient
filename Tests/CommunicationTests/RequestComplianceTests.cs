@@ -21,8 +21,8 @@ namespace CommunicationTests
             foreach (var requestData in testData)
             {
                 var fileName = $"{requestData.RequestType.Name.Replace("Raw", string.Empty)}.xml";
-                var path = $@"SampleRequestFiles\{fileName}";
-                var settings = new XmlWriterSettings { OmitXmlDeclaration = true, Indent = true };
+                var path = $@".\SampleRequestFiles\{fileName}";
+                var settings = new XmlWriterSettings { OmitXmlDeclaration = true, ConformanceLevel = ConformanceLevel.Auto,Indent = true,  };
                 using (var expectedContent = TestFileStreamer.StreamFileContent(path))
                 using (var actualContent = new MemoryStream())
                 using (var writer = XmlWriter.Create(actualContent, settings))

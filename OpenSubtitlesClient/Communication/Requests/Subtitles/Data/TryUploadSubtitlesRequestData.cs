@@ -1,4 +1,8 @@
-﻿namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
+﻿using Communication;
+using Communication.Common;
+using Communication.Subtitles;
+
+namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
 {
     public class TryUploadSubtitlesRequestData
     {

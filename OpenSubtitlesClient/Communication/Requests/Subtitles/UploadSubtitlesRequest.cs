@@ -18,7 +18,7 @@ namespace OpenSubtitlesClient.Communication.Requests.Subtitles
         {
         }
 
-        public UploadSubtitlesRequest(Token token, UploadSubtitlesRequestData data)
+        public UploadSubtitlesRequest(Token token, SubtitlesUploadData data)
             : base(
                 "UploadSubtitles",
                 RequestParameter.Token(token),
@@ -26,13 +26,13 @@ namespace OpenSubtitlesClient.Communication.Requests.Subtitles
         {
         }
 
-        private static RequestParameter BuildDataParameter(UploadSubtitlesRequestData data)
+        private static RequestParameter BuildDataParameter(SubtitlesUploadData data)
         {
             var members = BuildMembersFromData(data).ToArray();
             return RequestParameter.Create(RequestParameterValue.Struct(members));
         }
 
-        private static IEnumerable<RequestParameterValueBase> BuildMembersFromData(UploadSubtitlesRequestData d)
+        private static IEnumerable<RequestParameterValueBase> BuildMembersFromData(SubtitlesUploadData d)
         {
             yield return RequestParameterValue.Member(
                 "baseinfo",

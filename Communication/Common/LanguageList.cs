@@ -1,7 +1,6 @@
 ﻿using System.Linq;
-using OpenSubtitlesClient.Communication.Responses;
 
-namespace OpenSubtitlesClient.Communication.Requests.Movies.Data
+namespace Communication.Common
 {
     public class LanguageList
     {

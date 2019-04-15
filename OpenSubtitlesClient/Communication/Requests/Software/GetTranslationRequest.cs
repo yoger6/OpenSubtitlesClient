@@ -1,4 +1,6 @@
 ﻿using System.Xml.Serialization;
+using Communication;
+using Communication.Common;
 using OpenSubtitlesClient.Communication.Requests.Parameters;
 
 namespace OpenSubtitlesClient.Communication.Requests.Software

@@ -1,4 +1,7 @@
-﻿namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
+﻿using Communication;
+using Communication.Common;
+
+namespace OpenSubtitlesClient.Communication.Requests.Subtitles.Data
 {
     public class GeneralSubtitleInformation
     {

@@ -11,7 +11,7 @@ namespace CommunicationFunctionalTests.RequestTests
             yield return new[] { new RequestTestMember(TestRequestFactory.AutoUpdateRequest(), "AutoUpdateRequest") };
             yield return new[] { new RequestTestMember(TestRequestFactory.CheckMovieHashRequest(), "CheckMovieHashRequest") };
             yield return new[] { new RequestTestMember(TestRequestFactory.CheckSubHashRequest(), "CheckSubHashRequest") };
-            yield return new[] { new RequestTestMember(TestRequestFactory.DetectLanguageRequest(), "DetectLanguageRequest") };
+            yield return new[] { new RequestTestMember(TestRequestFactory.DetectLanguageRequest(), "DetectLanguageRawRequest") };
             yield return new[] { new RequestTestMember(TestRequestFactory.DownloadSubtitlesRequest(), "DownloadSubtitlesRequest") };
             yield return new[] { new RequestTestMember(TestRequestFactory.GetAvailableTranslationsRequest(), "GetAvailableTranslationsRequest") };
             yield return new[] { new RequestTestMember(TestRequestFactory.GetImdbMovieDetailsRequest(), "GetImdbMovieDetailsRequest") };

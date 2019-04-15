@@ -1,4 +1,4 @@
-﻿namespace OpenSubtitlesClient.Communication.Requests.Movies.Data
+﻿namespace Communication.Common
 {
     public enum Languages
     {

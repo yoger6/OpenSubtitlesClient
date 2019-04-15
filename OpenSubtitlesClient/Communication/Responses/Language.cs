@@ -1,6 +1,7 @@
 using System;
+using Communication;
+using Communication.Common;
 using OpenSubtitlesClient.Communication.Requests;
-using OpenSubtitlesClient.Communication.Requests.Movies.Data;
 
 namespace OpenSubtitlesClient.Communication.Responses
 {
